@@ -23,13 +23,13 @@ fecha: 08/04/2024
         <nav>
             <a href=""><img src="./public/img/placebo-logotype.webp" alt="placebologotype"></a>
             <div>
-                <a href="">listen</a>
-                <a href="">watch</a>
-                <a href="">tour</a>
-                <a href="">merch</a>
-                <a href="">music store</a>
-                <a href="">gallery</a>
-                <a href="">sign up</a>
+                <a href="#principal">listen</a>
+                <a href="#principal">watch</a>
+                <a href="#principal">tour</a>
+                <a href="#merch">merch</a>
+                <a href="#principal">music store</a>
+                <a href="#principal">gallery</a>
+                <a href="#principal">sign up</a>
             </div>
             <div>
                 <i class="bi bi-search"></i>
@@ -42,7 +42,7 @@ fecha: 08/04/2024
     <main>
 
         <!-- Sección donde va a ir la imagen o logotipo principal de la banda -->
-        <section class="imagen-principal"><figure><img src="./public/img/PLACEBO_Home (2).webp" alt="placebohome"></figure></section>
+        <section class="imagen-principal" id="principal"><figure><img src="./public/img/PLACEBO_Home (2).webp" alt="placebohome"></figure></section>
 
         <!-- Sección secundaria donde van a ir los botones para acceder al resto de las secciones aparte de la navbar -->
         <section class="botones">
@@ -55,7 +55,7 @@ fecha: 08/04/2024
                 <figcaption>tour</figcaption>
             </article>
             <article class="boton">
-                <a href=""><figure><img src="./public/img/Order.webp" alt="order"></figure></a>
+                <a href="#merch"><figure><img src="./public/img/Order.webp" alt="order"></figure></a>
                 <figcaption>order</figcaption>
             </article>
             <article class="boton">
@@ -65,10 +65,75 @@ fecha: 08/04/2024
         </section>
 
         <!-- Sección para la mercancía de la banda -->
-        <section class="merch">
-            <article></article>
-            <article></article>
+        <section class="merch" id="merch">
+
+            <article class="fila-productos">
+
+                <div class="producto">
+                    <figure><img src="./public/img/silhouettes tee.webp" alt="tee"></figure>
+                    <figcaption><h4>silhouettes tee</h4></figcaption>
+                    <p>$30.00</p>
+                    <button><p>choose options</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/nancy boy.webp" alt="socks"></figure>
+                    <figcaption><h4>nancy boy</h4></figcaption>
+                    <p>$15.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/collapse into never - unscented candle.webp" alt="candle"></figure>
+                    <figcaption><h4>collapse into never - unscented candle</h4></figcaption>
+                    <p>$30.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/this is what you wanted shopper.webp" alt="shopper"></figure>
+                    <figcaption><h4>you wanted shopper</h4></figcaption>
+                    <p>$20.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+            </article>
+
+            <article class="fila-productos">
+
+                <div class="producto">
+                    <figure><img src="./public/img/1-placebo-live-box.webp" alt="live-box"></figure>
+                    <figcaption><h4>placebo live-boxset</h4></figcaption>
+                    <p>$99.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/Placebo_SleepingWIthGhosts_Vinyl_A.webp" alt="sleeping-with-ghosts"></figure>
+                    <figcaption><h4>sleeping with ghosts vinyl</h4></figcaption>
+                    <p>$18.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/Placebo_WithoutYouImNothing_Vinyl_A.webp" alt="without-you-im-nothing"></figure>
+                    <figcaption><h4>without you i'm nothing vinyl</h4></figcaption>
+                    <p>$18.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+                <div class="producto">
+                    <figure><img src="./public/img/Placebo_BlackMarketMusic_Vinyl_A.webp" alt="black-market-music"></figure>
+                    <figcaption><h4>black market music vynil</h4></figcaption>
+                    <p>$18.00</p>
+                    <button><p>add to Cart</p></button>
+                </div>
+
+            </article>
+
         </section>
+
+        <section></section>
     </main>
 
     <!-- Crear el footer de la página -->
