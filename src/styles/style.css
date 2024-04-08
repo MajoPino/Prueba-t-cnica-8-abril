@@ -318,6 +318,7 @@ body {
 /* Css para la sección de tour */
 .tour {
     margin-top: 100px;
+    margin-bottom: 90px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -391,6 +392,35 @@ body {
                 border-left: 5px solid red;
             }
         }
+    }
+}
+
+/* Css para la sección sign up */
+.signup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--white);
+    gap: 10px;
+    
+    & p{
+        font-weight: bold;
+        font-size: small;
+    }
+
+    & button{
+        height: 40px;
+        width: 94px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    & button:hover {
+        background-color: var(--whitehover);
+        border-right: 5px solid blue;
+        border-left: 5px solid red;
     }
 }
 
