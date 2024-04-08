@@ -67,3 +67,18 @@ header{
         margin-right: 20px;
     }
 }
+
+/* Css para la sección de la imagen principal */
+.imagen-principal{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    & figure{
+        & img{
+            max-width: 1200px;
+        }
+    }
+}
+
