@@ -5,6 +5,8 @@
 /* Añadir las variables de entorno a la raíz */
 :root{
     --Grotesk: 'Neue Haas Grotesk Display Pro', sans-serif;
+    --black: black;
+    --white: white;
 }
 
 /* Resetear el css */
@@ -18,4 +20,50 @@
 /* Añadir estilos generales al body */
 body{
     font-family: var(--Grotesk);
+    background-image: url(../../public/img/background-page.webp);
+    background-size: cover;
+}
+
+/* Añadir estilos al header y al navbar */
+header{
+    background-color: var(--black);
+    padding: 20px;
+    margin: 20px;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & .img{
+        margin-right: 20px;
+        & img{
+            max-width: 250px;
+            min-width: 100px;
+        }
+    }
+
+    & .divone{
+        & a{
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bolder;
+        }
+    }
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+
+    & i{
+        margin-right: 20px;
+    }
 }
