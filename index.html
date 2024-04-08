@@ -5,13 +5,13 @@ fecha: 08/04/2024
 -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Importación de los metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Webpage of the band PLACEBO" />
-    <meta name="keywords"
-        content="riwi, PLACEBO, placebo, Music, Música, rock, conciertos, merch, indie, pop">
+    <meta name="keywords" content="riwi, PLACEBO, placebo, Music, Música, rock, conciertos, merch, indie, pop">
     <meta name="sitedomain" content="https://example.com/" />
     <meta name="organization" content="Riwi_Gates" />
     <meta name="author" content="MajoPino" />
@@ -28,23 +28,26 @@ fecha: 08/04/2024
     <!-- Titulo de la página -->
     <title>PLACEBO</title>
 </head>
+
 <body>
 
     <!-- Crear el header de la página -->
     <header>
+        <video class="bgvideo" src="./public/video/background-glitch.mp4" autoplay loop muted></video>
         <!-- Añadir el navbar -->
         <nav class="nav">
             <div class="maindiv">
-                <a class="img" href="#principal"><img src="./public/img/placebo-logotype.webp" alt="placebologotype"></a>
-            <div class="divone">
-                <a href="#principal">listen</a>
-                <a href="#principal">watch</a>
-                <a href="#tour">tour</a>
-                <a href="#merch">merch</a>
-                <a href="#principal">music store</a>
-                <a href="#principal">gallery</a>
-                <a href="#signup">sign up</a>
-            </div>
+                <a class="img" href="#principal"><img src="./public/img/placebo-logotype.webp"
+                        alt="placebologotype"></a>
+                <div class="divone">
+                    <a href="#principal">listen</a>
+                    <a href="#principal">watch</a>
+                    <a href="#tour">tour</a>
+                    <a href="#merch">merch</a>
+                    <a href="#principal">music store</a>
+                    <a href="#principal">gallery</a>
+                    <a href="#signup">sign up</a>
+                </div>
             </div>
             <div class="icons">
                 <i class="bi bi-search"></i>
@@ -57,25 +60,35 @@ fecha: 08/04/2024
     <main>
 
         <!-- Sección donde va a ir la imagen o logotipo principal de la banda -->
-        <section class="imagen-principal" id="principal"><figure><img src="./public/img/PLACEBO_Home (2).webp" alt="placebohome"></figure></section>
+        <section class="imagen-principal" id="principal">
+            <figure><img src="./public/img/PLACEBO_Home (2).webp" alt="placebohome"></figure>
+        </section>
 
         <!-- Sección secundaria donde van a ir los botones para acceder al resto de las secciones aparte de la navbar -->
         <section class="botones">
             <div class="botones-dos">
                 <article class="boton">
-                    <a href="https://www.youtube.com/" target="_blank"><figure><img class="imgone" src="./public/img/watch.webp" alt="watch"></figure></a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <figure><img class="imgone" src="./public/img/watch.webp" alt="watch"></figure>
+                    </a>
                     <figcaption>watch</figcaption>
                 </article>
                 <article class="boton">
-                    <a href="#tour"><figure><img class="imgone" src="./public/img/tour.webp" alt="tour"></figure></a>
+                    <a href="#tour">
+                        <figure><img class="imgone" src="./public/img/tour.webp" alt="tour"></figure>
+                    </a>
                     <figcaption>tour</figcaption>
                 </article>
                 <article class="boton">
-                    <a href="#merch"><figure><img class="imgtwo" src="./public/img/Order.webp" alt="order"></figure></a>
+                    <a href="#merch">
+                        <figure><img class="imgtwo" src="./public/img/Order.webp" alt="order"></figure>
+                    </a>
                     <figcaption>order</figcaption>
                 </article>
                 <article class="boton">
-                    <a href="https://open.spotify.com/" target="_blank"><figure><img class="imgtwo" src="./public/img/listen.webp" alt="listen"></figure></a>
+                    <a href="https://open.spotify.com/" target="_blank">
+                        <figure><img class="imgtwo" src="./public/img/listen.webp" alt="listen"></figure>
+                    </a>
                     <figcaption>listen</figcaption>
                 </article>
             </div>
@@ -84,66 +97,150 @@ fecha: 08/04/2024
         <!-- Sección para la mercancía de la banda -->
         <section class="merch" id="merch">
 
+            <!-- Fila para los primeros cuatro productos -->
             <article class="fila-productos">
 
                 <div class="producto">
-                    <figure><img src="./public/img/silhouettes tee.webp" alt="tee"></figure>
-                    <figcaption><h4>silhouettes tee</h4></figcaption>
-                    <p>$30.00</p>
-                    <button><p>choose options</p></button>
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/silhouettes tee.webp" alt="tee"></figure>
+                        <figcaption>
+                            <h4>silhouettes tee</h4>
+                        </figcaption>
+                        <p class="price">$30.00</p>
+                    </div>
+
+                    <button class="btnopt">
+                        <p>choose options</p>
+                    </button>
+
                 </div>
 
                 <div class="producto">
-                    <figure><img src="./public/img/nancy boy.webp" alt="socks"></figure>
-                    <figcaption><h4>nancy boy</h4></figcaption>
-                    <p>$15.00</p>
-                    <button><p>add to Cart</p></button>
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/nancy boy.webp" alt="socks"></figure>
+                        <figcaption>
+                            <h4>nancy boy</h4>
+                        </figcaption>
+                        <p class="price">$15.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
+                </div>
+
+                <div class="productotwo">
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/collapse into never - unscented candle.webp" alt="candle">
+                        </figure>
+                        <figcaption>
+                            <h4>collapse into never-</h4>
+                            <span></span>
+                            <h4>unscented candle</h4>
+                        </figcaption>
+                        <p class="price">$30.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
                 <div class="producto">
-                    <figure><img src="./public/img/collapse into never - unscented candle.webp" alt="candle"></figure>
-                    <figcaption><h4>collapse into never - unscented candle</h4></figcaption>
-                    <p>$30.00</p>
-                    <button><p>add to Cart</p></button>
-                </div>
 
-                <div class="producto">
-                    <figure><img src="./public/img/this is what you wanted shopper.webp" alt="shopper"></figure>
-                    <figcaption><h4>you wanted shopper</h4></figcaption>
-                    <p>$20.00</p>
-                    <button><p>add to Cart</p></button>
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/this is what you wanted shopper.webp" alt="shopper"></figure>
+                        <figcaption>
+                            <h4>you wanted shopper</h4>
+                        </figcaption>
+                        <p class="price">$20.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
             </article>
 
+            <!-- Fila para los otros cuatro productos -->
             <article class="fila-productos">
 
                 <div class="producto">
-                    <figure><img src="./public/img/1-placebo-live-box.webp" alt="live-box"></figure>
-                    <figcaption><h4>placebo live-boxset</h4></figcaption>
-                    <p>$99.00</p>
-                    <button><p>add to Cart</p></button>
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/1-placebo-live-box.webp" alt="live-box"></figure>
+                        <figcaption>
+                            <h4>placebo live-boxset</h4>
+                        </figcaption>
+                        <p class="price">$99.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
-                <div class="producto">
-                    <figure><img src="./public/img/Placebo_SleepingWIthGhosts_Vinyl_A.webp" alt="sleeping-with-ghosts"></figure>
-                    <figcaption><h4>sleeping with ghosts vinyl</h4></figcaption>
-                    <p>$18.00</p>
-                    <button><p>add to Cart</p></button>
+                <div class="productotwo">
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/Placebo_SleepingWIthGhosts_Vinyl_A.webp"
+                                alt="sleeping-with-ghosts">
+                        </figure>
+                        <figcaption>
+                            <h4>sleeping with ghosts</h4>
+                            <h4>vinyl</h4>
+                        </figcaption>
+                        <p class="price">$18.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
-                <div class="producto">
-                    <figure><img src="./public/img/Placebo_WithoutYouImNothing_Vinyl_A.webp" alt="without-you-im-nothing"></figure>
-                    <figcaption><h4>without you i'm nothing vinyl</h4></figcaption>
-                    <p>$18.00</p>
-                    <button><p>add to Cart</p></button>
+                <div class="productotwo">
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/Placebo_WithoutYouImNothing_Vinyl_A.webp"
+                                alt="without-you-im-nothing"></figure>
+                        <figcaption>
+                            <h4>without you i'm</h4>
+                            <h4>nothing vinyl</h4>
+                        </figcaption>
+                        <p class="price">$18.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
-                <div class="producto">
-                    <figure><img src="./public/img/Placebo_BlackMarketMusic_Vinyl_A.webp" alt="black-market-music"></figure>
-                    <figcaption><h4>black market music vynil</h4></figcaption>
-                    <p>$18.00</p>
-                    <button><p>add to Cart</p></button>
+                <div class="productotwo">
+
+                    <div class="prodinfo">
+                        <figure><img src="./public/img/Placebo_BlackMarketMusic_Vinyl_A.webp" alt="black-market-music">
+                        </figure>
+                        <figcaption>
+                            <h4>black market music</h4>
+                            <h4>vynil</h4>
+                        </figcaption>
+                        <p class="price">$18.00</p>
+                    </div>
+
+                    <button class="btncart">
+                        <p>add to Cart</p>
+                    </button>
+
                 </div>
 
             </article>
@@ -205,7 +302,8 @@ fecha: 08/04/2024
         <!-- Sección para el sign up -->
         <section class="signup" id="signup">
             <h2>suscribe to our newsletter</h2>
-            <p>Stay in the loop with our latest product and music releases. Sign up now to be the first to know and get exclusive access</p>
+            <p>Stay in the loop with our latest product and music releases. Sign up now to be the first to know and get
+                exclusive access</p>
             <button>Sing Up</button>
         </section>
 
@@ -222,15 +320,30 @@ fecha: 08/04/2024
         </section>
         <section class="foot">
             <li>
-                <ul><p>© 2024,"Placebo- Powered by BSI Merch</p></ul>
-                <ul><p>Refund policy</p></ul>
-                <ul><p>Privacy policy</p></ul>
-                <ul><p>Terms of service</p></ul>
-                <ul><p>Contact</p></ul>
-                <ul><p>Help & FAQS</p></ul>
-                <ul><p>Sign Up</p></ul>
+                <ul>
+                    <p>© 2024,"Placebo- Powered by BSI Merch</p>
+                </ul>
+                <ul>
+                    <p>Refund policy</p>
+                </ul>
+                <ul>
+                    <p>Privacy policy</p>
+                </ul>
+                <ul>
+                    <p>Terms of service</p>
+                </ul>
+                <ul>
+                    <p>Contact</p>
+                </ul>
+                <ul>
+                    <p>Help & FAQS</p>
+                </ul>
+                <ul>
+                    <p>Sign Up</p>
+                </ul>
             </li>
         </section>
     </footer>
 </body>
+
 </html>

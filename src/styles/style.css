@@ -32,6 +32,13 @@ header {
     margin: 20px;
 }
 
+/* Añadir el video de fondo */
+.bgvideo {
+    z-index: -200;
+    position: fixed;
+}
+
+/* Hacer la navbar */
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +100,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 /* Subcajón del cajón botones */
@@ -105,12 +113,12 @@ header {
     gap: 150px;
 }
 
-
+/* Modificador de los botones */
 .boton {
     display: flex;
     align-content: center;
     flex-direction: column;
-    
+
 
     & a {
         & figure {
@@ -121,6 +129,7 @@ header {
             overflow: hidden;
         }
 
+        /* Imagenes grandes que no caben dentro del contenedor */
         & .imgone {
             max-height: 354px;
             min-height: 154px;
@@ -129,6 +138,7 @@ header {
 
         }
 
+        /* Imagenes pequeñas que caben dentro del contenedor */
         & .imgtwo {
             max-height: 344px;
             min-height: 144px;
@@ -136,11 +146,167 @@ header {
         }
     }
 
+    /* Descripción de la imagen/botón */
     & figcaption {
         color: var(--white);
         text-align: center;
         font-size: x-large;
         font-weight: 900;
+    }
+}
+
+/* Estilos para la sección de merch */
+
+/* Contenedor de merch */
+.merch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Contenedor de la primera fila */
+.fila-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 20px;
+}
+
+/* Contenedor de la caja del producto con texto corto */
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+    /* Contenedor de la imagen, nombre y precio del producto */
+    & .prodinfo {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        & figure {
+            background-color: var(--white);
+            height: 220px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+
+            & img {
+                height: 220px;
+            }
+        }
+
+        & figcaption {
+            color: var(--white);
+            width: 350px;
+            text-decoration: underline;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        & .price {
+            color: var(--white);
+            font-weight: 800;
+            font-size: smaller;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    /* Primera variación del botón */
+    & .btnopt {
+        font-weight: bold;
+        background-color: var(--white);
+        height: 45px;
+        width: 150px;
+        border-radius: 25px;
+        text-decoration: underline;
+    }
+
+    & .btnopt:hover {
+        border-right: 5px solid blue;
+        border-left: 5px solid red;
+    }
+
+    /* Botón del producto */
+    & .btncart {
+        font-weight: bold;
+        background-color: var(--white);
+        height: 45px;
+        width: 110px;
+        border-radius: 25px;
+        text-decoration: underline;
+    }
+
+    & .btncart:hover {
+        border-right: 5px solid blue;
+        border-left: 5px solid red;
+    }
+}
+
+/* Contenedor de la caja del producto con texto corto */
+.productotwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+    /* Contenedor de la imagen, nombre y precio del producto */
+    & .prodinfo {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        & figure {
+            background-color: var(--white);
+            height: 220px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+
+            & img {
+                height: 220px;
+            }
+        }
+
+        & figcaption {
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 350px;
+            text-decoration: underline;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        & .price {
+            color: var(--white);
+            font-weight: 800;
+            font-size: smaller;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    /* Botón del producto */
+    & .btncart {
+        font-weight: bold;
+        background-color: var(--white);
+        height: 45px;
+        width: 110px;
+        border-radius: 25px;
+        text-decoration: underline;
+    }
+
+    & .btncart:hover {
+        border-right: 5px solid blue;
+        border-left: 5px solid red;
     }
 }
 
