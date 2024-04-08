@@ -85,7 +85,6 @@ body {
 /* Css para la sección de la imagen principal */
 .imagen-principal {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-content: center;
@@ -107,7 +106,7 @@ body {
 
 /* Subcajón del cajón botones */
 .botones-dos {
-    min-width: 1000px;
+    min-width: 700px;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
